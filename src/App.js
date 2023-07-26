@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import NavBar from './NavBar';
+import TopNav from './TopNav';
+import HeroSection from './HeroSection';
+import VideoSec from './VideoSec';
+import Services from './Services';
+import Footer from './Footer';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css'
+import { BrowserRouter, Routes } from 'react-router-dom';
+
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+<>
+
+<TopNav />
+<NavBar />
+
+<HeroSection />
+<VideoSec />
+<Services />
+<Footer />
+</>
+  )
 }
 
-export default App;
+export default App
