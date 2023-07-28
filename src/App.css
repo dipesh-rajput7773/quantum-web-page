@@ -444,6 +444,6 @@ h5 {
         margin-top: 21%;
     }
     svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.css-i4bv87-MuiSvgIcon-root {
-        font-size: 10px;
+        font-size: 10px !important;
     }
 }
