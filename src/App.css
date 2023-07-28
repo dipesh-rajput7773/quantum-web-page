@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: poppins, sans-serif;
+    font-family: poppins, sans-serif !important;
 
 }
 
@@ -251,6 +251,20 @@ input[type="email"]::placeholder {
     max-width: 500px;
 }
 
+button:focus:not(:focus-visible) {
+    outline: none;
+    outline: none !important;
+}
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none;
+}
+
+button.navbar-toggler.collapsed {
+    font-size: 0.8rem !important;
+    padding: 4px 7px 4px 7px;
+}
 
 
 
@@ -412,6 +426,14 @@ h5 {
         width: 250px;
         outline: none;
     }
+
+    .btn {
+        --bs-btn-padding-x: 0.6rem !important;
+        --bs-btn-padding-y: 0.370rem !important;
+        font-family: poppins,sans-serif !important;
+        --bs-btn-font-size: 0.7rem;
+       
+    }
 }
 @media screen and (max-width: 360px){
     .posistion img {
@@ -420,5 +442,8 @@ h5 {
     span.posistion {
         left: 0px;
         margin-top: 21%;
+    }
+    svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.css-i4bv87-MuiSvgIcon-root {
+        font-size: 10px;
     }
 }
